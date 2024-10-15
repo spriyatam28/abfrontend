@@ -2,11 +2,11 @@
   <div class="container mx-auto flex items-center justify-between">
     <div class="flex items-center">
       <img src="/audiotale-logo.png" alt="Logo" class="h-8 w-8 mr-2 rounded-full">
-      <a href="/" class="text-gray-100 text-2xl font-bold">Audiotale</a>
-      <div class="hidden md:flex space-x-3 ml-12">
-        <a href="/audiobooks" class="text-orange-400 text-xl hover:text-gray-100 font-bold">Audiobooks</a>
-        <a href="/favorites" class="text-orange-400 text-xl hover:text-gray-100 font-bold">Favorites</a>
-        <a href="/categories" class="text-orange-400 text-xl hover:text-gray-100 font-bold">Genres</a>
+      <a routerLink="/" class="text-gray-100 text-2xl font-bold">Audiotale</a>
+      <div class="md:flex space-x-3 ml-12">
+        <a routerLink="/audiobooks" class="text-orange-400 text-xl hover:text-gray-100 font-bold">Audiobooks</a>
+        <a routerLink="/favorites" class="text-orange-400 text-xl hover:text-gray-100 font-bold">Favorites</a>
+        <a routerLink="/genres" class="text-orange-400 text-xl hover:text-gray-100 font-bold">Genres</a>
       </div>
     </div>
     <div class="flex items-center space-x-4">
@@ -16,7 +16,10 @@
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
         </svg>
       </button>
-      <a href="/login" class="text-gray-300 ml-6 text-xl hover:text-gray-100">Login</a>
+      <a routerLink="/login" class="text-gray-300 ml-6 text-xl hover:text-gray-100">Login</a>
     </div>
   </div>
 </nav>
+<div>
+  <router-outlet/>
+</div>
